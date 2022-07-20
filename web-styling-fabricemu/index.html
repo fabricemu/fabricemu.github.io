@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="bootstrap/    css/bootstrap.css"> -->
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body id="top">
+    <!--header section-->
+    <header>
+        <!-- Start nav -->
+        <!-- emmet -->
+        <!-- ul>(li>a)*3 it will create 3 list of items with anchor tag-->
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><img id="logo" src="images/prime.jpg"></li>
+            </ul>
+        </nav>
+        <!-- End nav -->
+        <!-- Start hero section -->
+        <section class="head-text fs-1 fw-bold">
+            <img src="images/prime.jpg" width="430" height="160">
+            <h1>Prime Insurance Limited</h1>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login" id="loginb"><i class="fa fa-fw fa-user"></i>Login</button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#signupp" id="signup"><i class="fa fa-fw fa-user"></i>signup</button>
+
+        </section>
+        
+        <!-- End hero section -->
+    </header>
+    <!-- end header section -->
+    <!-- Aside section-->
+    <aside class="container">
+            <!-- Modal -->
+            <div class="modal fade" id="login" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close bg-danger" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title bg-primary">Login form</h2>
+                  </div>
+                  <form action="/action_page.php">
+                    <div class="container-signup">
+                      <p>Please fill in this form to create an account.</p>
+                      <hr>
+                  
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                  
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                                    
+                      <p>By log into your account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                  
+                      <button type="submit" class="registerbtn">Login</button>
+                    </div>
+                    
+                    <div class="container-signup signin">
+                      <p>You don't have an account? <a href="#" data-toggle="modal" data-target="#signupp" data-dismiss="modal">Sign up</a>.</p>
+                    </div>
+                  </form>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <!-- Signup -->
+            <div class="modal fade" id="signupp" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title bg-primary">Registration form</h2>
+                  </div>
+                  <form action="/action_page.php">
+                    <div class="container-signup">
+                      <p>Please fill in this form to create an account.</p>
+                      <hr>
+                  
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                  
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                  
+                      <label for="psw-repeat"><b>Repeat Password</b></label>
+                      <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+                      <hr>
+                      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                  
+                      <button type="submit" class="registerbtn">Register</button>
+                    </div>
+                    
+                    <div class="container-signup signin">
+                      <p>Already have an account? <a href="#" data-toggle="modal" data-target="#login" data-dismiss="modal">Sign in</a>.</p>
+                    </div>
+                  </form>
+                  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            
+          </div>
+        
+    </aside>
+    <!-- Main section -->
+    <main class="container-fluid">
+      <div class="col-container">
+        
+        <div class="col">
+          <h2>Personal Vehicle</h2>
+          <div class="card-image per"></div>
+          <p>Prime Insurance Limited is an insurance company, established in 1995 by Rwandan investors, a licensed general and life insurance company authorized by the National Bank of Rwanda (BNR).
+            Prime Insurance Ltd and Prime Life Insurance Ltd are insurance companies accredited by the National Bank of Rwanda to provide short-term and life insurance.</p>
+
+        </div>
+      
+        <div class="col">
+          <h2>Company Vehicles</h2>
+          <div class="card-image com"></div>
+          <p>Prime Insurance Limited is an insurance company, established in 1995 by Rwandan investors, a licensed general and life insurance company authorized by the National Bank of Rwanda (BNR).
+            Prime Insurance Ltd and Prime Life Insurance Ltd are insurance companies accredited by the National Bank of Rwanda to provide short-term and life insurance.</p>
+
+        </div>
+      
+        <div class="col">
+          <h2>Governoment vehicle</h2>
+          <div class="card-image gov"></div>
+          <p>Prime Insurance Limited is an insurance company, established in 1995 by Rwandan investors, a licensed general and life insurance company authorized by the National Bank of Rwanda (BNR).
+            Prime Insurance Ltd and Prime Life Insurance Ltd are insurance companies accredited by the National Bank of Rwanda to provide short-term and life insurance.</p>
+
+        </div>
+      </div>
+      <div class="container-fluid">
+        <h2>Schedule</h2>
+        <ul class="list-group">
+          <li class="list-group-item">New <span class="badge">12</span></li>
+          <li class="list-group-item">Deleted <span class="badge">5</span></li>
+          <li class="list-group-item">Warnings <span class="badge">3</span></li>
+        </ul>
+      </div>
+      
+    <footer class="mainfooter" role="contentinfo">  
+      <div class="footer-middle">  
+      <div class="container">  
+        <div class="row">  
+          <div class="col-md-3 col-sm-6">  
+            <div class="footer-pad">  
+              <h4> Footer Heading 1</h4>  
+              <ul class="list-unstyled">  
+                <li> <a href="#"> </a> </li>  
+                <li> <a href="#">Payment Center</a></li>  
+                <li> <a href="#"> Contact Directory </a></li>  
+                <li> <a href="#">Forms</a></li>  
+                <li> <a href="#">News and Updates</a></li>  
+                <li> <a href="#">FAQs</a></li>  
+              </ul>  
+            </div>  
+          </div>  
+          <div class="col-md-3 col-sm-6">  
+            <div class="footer-pad">  
+              <h4> Footer Heading 2</h4>  
+              <ul class="list-unstyled">  
+                <li><a href="#"> Blog </a> </li>  
+                <li><a href="#">Accessibility</a> </li>  
+                <li><a href="#">Disclaimer</a></li>  
+                <li><a href="#">Privacy Policy</a></li>  
+                <li><a href="#">FAQs</a></li>  
+                <li><a href="#">Webmaster</a></li>  
+              </ul>  
+            </div>  
+          </div>  
+          <div class="col-md-3 col-sm-6">  
+            <div class="footer-pad">  
+              <h4> Footer Heading 3 </h4>  
+              <ul class="list-unstyled">  
+                <li> <a href="#"> Parks and Recreation </a> </li>  
+                <li> <a href="#"> Public Works </a> </li>  
+                <li> <a href="#">Police Department</a> </li>  
+                <li> <a href="#"> Fire </a> </li>  
+                <li> <a href="#"> Mayor and City Council </a> </li>  
+              </ul>  
+            </div>  
+          </div>  
+            <div class="col-md-3">  
+                <h4> Follow Us </h4>  
+                <ul class="social-network social-circle">  
+                 <li> <a href="#" class="icoFacebook" title="Facebook"> <i class="fa fa-facebook"> </i> </a> </li>  
+                 <li> <a href="#" class="icoLinkedin" title="Linkedin"> <i class="fa fa-linkedin"> </i> </a> </li>  
+        <li> <a href="#"> <i class="fa fa-youtube" aria-hidden="true"> </i> </a> </li>  
+                </ul>               
+        </div>  
+        </div>  
+        <div class="row">  
+        <div class="col-md-12 copy">  
+        <p class="text-center"> © Copyright 2022.  All rights reserved. </p>  
+        </div>  
+        </div>  
+      </div>  
+      </div>  
+    </footer>
+    <script src="bootstrap/js/bootstrap.js"></script>
+  
+</body>
+</html>
